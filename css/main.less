@@ -1,0 +1,149 @@
+@import 'styles/brand.less';
+@import 'styles/typography.less';
+@import 'styles/grid.less';
+@import 'styles/mixins.less';
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  .column(12);
+  background-color:@color1;
+}
+header#top{
+	.column(12);
+}
+h1{
+		color:@color2;
+		font-size:.h1;
+		text-align: center;
+		font-weight: @headingfontweight;
+}
+a{
+	text-decoration: none;
+}
+nav.navigation{
+
+	.column(12);
+	background:@color5;
+	text-transform: uppercase;
+	/*min-height: 30px;*/
+	text-align: center;
+	margin-top: 5px;
+
+	
+}
+nav li{
+	display: inline-block;
+}
+nav a{
+	line-height: 40px;
+	text-decoration: none;
+	padding: 12px 23px 14px 23px;
+	color: @color1;
+}
+	nav a:hover{
+		color: white;
+
+}
+
+#hero{
+	min-height: 420px;
+	.column(12);
+	
+}
+#hero img{
+	margin-top: 8px;
+	.border-radius;
+}
+
+section#block-one {
+  .column(6);
+  .indent;
+  line-height: @baselineheight;
+}
+section#block-two {
+  .column(6);
+  .indent;
+  line-height: @baselineheight;
+}
+footer{
+	.column(12);
+	background-color: @color4;
+	color: @color3;
+	font-size: .h3;
+	text-align: center;
+}
+h3{
+	margin: 5px 0px 5px 0px;
+}
+
+/*
+//music page style*/
+section#info-one{
+	.column(4);
+	
+	
+}
+img{
+	.marginbottom;
+	.margintop;
+	-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ img:hover {
+  -webkit-filter: grayscale(80%);
+  cursor: pointer;
+   }
+
+section#info-two{
+	.column(4);
+	
+}
+section#info-three{
+	.column(4);
+}
+section#info-four{
+	.column(4);
+}
+section#info-five{
+	.column(4);
+}
+section#info-six{
+	.column(4);
+}
+
+
+/*
+tour page style*/
+
+#blank{
+	.column(1);
+}
+
+section#tour-one{
+	.column(11);
+	height: 100px;
+}	
+section img{
+	.left();
+}
+section p{
+	font-size: @basefontsize - 2;/*//it's cool :D*/
+	.left();
+	margin: 25px 0px 0px 10px;
+
+}
+section a{
+	text-decoration: none;
+	color: @basefontcolor;
+}
+section a:hover{
+	color: @color5;
+}
